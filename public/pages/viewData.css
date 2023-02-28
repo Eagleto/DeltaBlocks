@@ -1,0 +1,44 @@
+.span12{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    font-size: 1.3em;
+}
+.GR{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    background-color: aqua;
+    height: 50px;
+    align-items: center;
+    margin: 0 300px;
+    border-radius: 5px;
+}
+.GR input{
+    font-size: large;
+    width: 150px;
+    margin: 0 10px;
+    height: 25px;
+}
+.GR input:hover{
+    border-color: black;
+}
+.button89{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.button89 button{
+    width: 200px;
+    height: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius :4px ;
+    background-color: #9a46dc;
+    border: none;
+    color: white;
+}
+.button89 button:hover{
+    background-color:#5f288b ;
+}

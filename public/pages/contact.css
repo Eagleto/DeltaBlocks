@@ -1,0 +1,51 @@
+.contactS{
+    margin: 0 100px;
+    height: 400px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactContent{
+    background-color: aliceblue;
+    padding:20px;
+    border-radius: 30px;
+
+}
+.email{
+    padding: 10px 0;
+}
+.contactS label{
+    font-size: large;
+}
+.contactS input{
+    width:500px;
+    height: 25px;
+    font-size: large;
+
+}
+.contactS textarea{
+    width: 800px;
+    font-size: large;
+}
+.contactS button{
+    width: 200px;
+    height: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius :4px ;
+    background-color: #9a46dc;
+    border: none;
+    color: white;
+}
+.sendButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+.contactS button:hover{
+    --hover-action-color: #5f288b;
+    background-color:var(--hover-action-color) ;
+}

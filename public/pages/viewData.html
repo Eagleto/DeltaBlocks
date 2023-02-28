@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/style.css">
+    <link rel="stylesheet" href="/pages/viewData.css">
+    <link rel="stylesheet" href="/pages/storeData.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <script src="/scripts/connect.js"></script>
+    <script src="/scripts/retrieveData.js"></script>
+    <title>View Data</title>
+</head>
+<body>
+    <header>
+        <div class="navBar">
+            <div class="name">
+                <img src="/IMG_20220918_203138-removebg-preview.png" alt="">
+                <p>DeltaBlocks</p>
+            </div>
+            <div class="pages">
+                <a href="/">Home</a>
+                <a href="/pages/storeData.html">Store Data</a>
+                <a href="/pages/viewData.html">View Data</a>
+                <a href="/pages/contact.html">Contact Us</a>
+            </div>
+            <button class="connect" id="connectMetamask" onclick="connectToMetamask()">
+                <span>Login to Metamask</span>
+                <img src="/arrowRight.svg" alt="">
+            </button>
+        </div>
+    </header>
+    <section style="margin: 0 100px;">
+        <div class="account" id="displayAccounts">
+            Not Connected! Please Login to Metamask
+        </div>
+        <div class="store">
+            View Students Data
+        </div>
+        <div style="height:170px ;">
+            <span class="span12">Please enter GR No. to view data</span>
+            <div class="GR">
+                <label id="son">GR No. :</label>
+                <input type="text" id="GRNo">
+            </div>
+            <div class="button89">
+               <button onclick="retrieveData()">View</button>
+            </div>
+        </div>
+        <div class="storeData">
+            <div class="section1">
+                <section>
+                    <label >Name :</label>
+                    <label class="label3" id="nameLabel"></label>
+                </section><br>
+            </div>
+            <div class="section2">
+                <section>
+                    <label>Roll No. :</label>
+                    <label class="label4" id="rollLabel"></label>
+                </section> 
+                <section>
+                    <label>Class :</label>
+                    <label class="label4" id="classLabel"></label>
+                </section>
+                <section>
+                    <label>Div. :</label>
+                    <label class="label4" id="divLabel"></label>
+                </section>
+            </div>
+            <div class="section3">
+                <section>
+                    <label>Date of Birth :</label>
+                    <label class="label4" id="dobLabel"></label>
+                </section>
+                <section>
+                    <label>Faculty :</label>
+                    <label class="label4" id="facultyLabel" ></label>
+                </section>
+            </div>
+            <div class="section4">
+                <section>
+                    <label>Mobile No. :</label>
+                    <label class="label4" id="mobLabel"></label>
+                </section>
+                <section>
+                    <label>Email :</label>
+                    <label class="label4" id="emailLabel"></label>
+                </section>
+            </div>
+            <div class="section4">
+                <section>
+                    <label>City :</label>
+                    <label class="label4" id="cityLabel"></label>
+                </section>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot1">
+            <div class="foot4">
+                Thank You For Choosing Deltablocks
+            </div>
+            <div class="foot5">
+                <div class="foot6">
+                    <span class="footpage">Pages</span><br>
+                    <a href="/pages/index.html">Home</a><br>
+                    <a href="/pages//storeData.html">Store Data</a><br>
+                    <a href="/pages/viewData.html">View Data</a><br>
+                    <a href="/pages/contact.html">Contact</a>
+                </div>
+                <div>
+                    <span class="footpage">Technologies</span><br>
+                    <a href="https://www.blockchain.com/">Blockchain</a><br>
+                    <a href="https://ethereum.org/en/developers/docs/">Ethereum</a><br>
+                    <a href="https://ethereum.org/en/developers/docs/smart-contracts/">Smart Contract</a>
+                </div>
+                <div>
+                    <span class="footpage">More Info.</span><br>
+                    <a href="">Terms and conditions</a><br>
+                    <a href="">About</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="foot2">
+            <p>© 2022 Deltablocks Inc. All rights reserved.</p>
+            <div class="foot3">
+                <a href="https://www.facebook.com/"><img src="/images/Facebook-logo.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="/images/Instagram_logo_2016.svg.png" alt=""></a>
+                <a href="https://twitter.com/login"><img src="/images/twitter.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
